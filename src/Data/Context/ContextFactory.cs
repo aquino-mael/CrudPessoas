@@ -7,7 +7,7 @@ namespace Data.Context
     {
         public MyContext CreateDbContext(string[] args)
         {
-            const string connectionString = "Server=localhost;Port=3306;Database=dbPessoaCrud;Uid=root;Pwd=Ismael-753951456654!";
+            const string connectionString = "Server=localhost;Port=3306;Database=dbPessoaCrud;Uid=root;Pwd=Ismael-753951!";
             var optionsBuilder = new DbContextOptionsBuilder<MyContext>();
             optionsBuilder.UseMySQL(connectionString);
             return new MyContext(optionsBuilder.Options);
