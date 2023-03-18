@@ -1,0 +1,11 @@
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Domain.Dtos.Pessoa;
+
+public class PessoaDtoResult
+{
+    public Guid Id { get; set; }
+    public string Name { get; set; }
+    public string Email { get; set; }
+    public string Cpf { get; set; }
+}

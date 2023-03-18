@@ -18,10 +18,10 @@ namespace Data.Mapping
             builder.Property(p => p.Email)
                    .HasMaxLength(100);
 
-            builder.HasIndex(p => p.DocumentNumber)
+            builder.HasIndex(p => p.Cpf)
                    .IsUnique();
 
-            builder.Property(p => p.DocumentNumber)
+            builder.Property(p => p.Cpf)
                    .IsRequired()
                    .HasMaxLength(14);
 
